@@ -1,9 +1,10 @@
 # 🧠 CodeReviewerMax
 
-**CodeReviewerMax** is a free, offline, AI-powered code reviewer extension for Visual Studio Code.
+Local AI Code Reviewer for Visual Studio Code
 
-It lets you highlight code in your editor and instantly get AI-generated feedback — focused on readability, logic, and bug prevention — using a local model (GPT4All or Flask-based backend). No OpenAI API keys required.
+CodeReviewerMax is a free, fully offline AI-powered code review extension for VS Code. It lets you select code in the editor and instantly get AI-generated feedback focused on readability, logic, and improvements — without needing any API keys or internet access.
 
+Powered by GPT4All running locally on your machine.
 ---
 
 ## 🎥 Demo
@@ -19,7 +20,7 @@ It lets you highlight code in your editor and instantly get AI-generated feedbac
 - 📑 Markdown-rendered feedback in a clean side panel
 - 💾 Automatically saves `latest-code-review.md` in your workspace
 - 🖱️ Trigger with command or shortcut: `Ctrl + Alt + R`
-- ✅ Fully offline (powered by GPT4All or local Flask backend)
+- ✅ Fully offline (powered by GPT4All and local Flask backend)
 - 💬 Status bar shows progress while reviewing
 
 ---
@@ -30,10 +31,8 @@ It lets you highlight code in your editor and instantly get AI-generated feedbac
 - **Node.js** (for building extension)
 - **Backend AI API running on** `http://localhost:4891`
 
-You can run either of:
+You can run on:
 - 🧠 [GPT4All App with Local Server](https://gpt4all.io/)
-- 🧪 Flask server with CodeT5 or StarCoder model
-
 ---
 
 ## 📦 Getting Started
