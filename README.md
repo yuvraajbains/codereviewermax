@@ -8,8 +8,6 @@ It lets you highlight code in your editor and instantly get AI-generated feedbac
 
 ## 🎥 Demo
 
-> 👉 *Paste your GIF demo here* (e.g. `/demo.gif`)
-
 ![CodeReviewerMax Demo](Animation.gif)
 
 ---
