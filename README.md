@@ -1,60 +1,53 @@
+
 # 🧠 CodeReviewerMax
 
-Local AI Code Reviewer for Visual Studio Code
+CodeReviewerMax is a free, offline AI-powered code review extension for Visual Studio Code. It uses a locally hosted GPT4All model to analyze selected code and return professional feedback — no API keys or internet connection required.
 
-CodeReviewerMax is a free, fully offline AI-powered code review extension for VS Code. It lets you select code in the editor and instantly get AI-generated feedback focused on readability, logic, and improvements — without needing any API keys or internet access.
-
-Powered by GPT4All running locally on your machine.
 ---
 
-## 🎥 Demo
-
-![CodeReviewerMax Demo](Animation.gif)
+## 🎥 Demo  
+![CodeReviewMax Demo GIF](Animation.gif) <!-- Replace with your actual demo path -->
 
 ---
 
 ## 🚀 Features
 
-- 🧠 AI-generated code reviews based on selected code
-- ✍️ Concise, professional feedback (not verbose)
-- 📑 Markdown-rendered feedback in a clean side panel
-- 💾 Automatically saves `latest-code-review.md` in your workspace
-- 🖱️ Trigger with command or shortcut: `Ctrl + Alt + R`
-- ✅ Fully offline (powered by GPT4All and local Flask backend)
-- 💬 Status bar shows progress while reviewing
+- 🧠 Instant, AI-generated code reviews for selected code blocks
+- 📑 Markdown-rendered feedback in a dedicated side panel
+- 💾 Automatically saves feedback to `latest-code-review.md`
+- 🖱️ Run via command or shortcut: `Ctrl + Alt + R`
+- 💬 Status bar indicator shows progress while reviewing
+- ✍️ Concise, developer-focused suggestions
+- ✅ Fully offline (runs with GPT4All local server)
 
 ---
 
 ## ⚙️ Requirements
 
-- **VS Code 1.99.0+**
-- **Node.js** (for building extension)
-- **Backend AI API running on** `http://localhost:4891`
+- **VS Code** v1.99.0 or higher
+- **Node.js**
+- **GPT4All Desktop App**
+  - Enable the local API server under Settings
+  - Make sure a model is loaded (e.g., *Mistral Instruct*)
 
-You can run on:
-- 🧠 [GPT4All App with Local Server](https://gpt4all.io/)
+> CodeReviewerMax connects to: `http://localhost:4891/v1/chat/completions`
+
 ---
 
 ## 📦 Getting Started
 
-1. Clone this repo  
+1. Clone this repository  
 2. Run `npm install`  
 3. Run `npm run compile`  
-4. Press `F5` to launch a Development Host  
-5. Select code in an open file  
+4. Press `F5` to launch the Extension Development Host  
+5. Select code in any open file  
 6. Press `Ctrl + Alt + R`  
-7. View review in side panel and in `latest-code-review.md`
+7. View review in side panel and `latest-code-review.md`
 
 ---
 
-## 🧪 Optional Flask Backend
-
-You can use the [CodeReviewer Flask server](https://github.com/your-backend-repo-link) to run models like CodeT5+ or StarCoderBase locally.
-
----
-
-## 🛠️ Building / Packaging
+## 🛠️ Build / Package
 
 ```bash
-npm run compile       # Compile the extension
-vsce package          # (Optional) Create VSIX package for publishing
+npm run compile         # Compile extension
+npx vsce package        # Create .vsix (optional)
